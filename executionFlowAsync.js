@@ -1,12 +1,12 @@
-function function2(){
-    console.log('function 2');
+function function2() {
+    console.log('function 2 callback message');
 }
-function function1(callback){
+function function1(callback) {
     console.log('function 1 first instruction');
-    setTimeout(callback,10000)
+    setTimeout(callback, 10000)
     console.log('function 1 last instruction');
 }
-function executionFlow(){
+function executionFlow() {
     console.log('main started');
     function1(function2);
     console.log('last instruction in main');
